@@ -1,0 +1,269 @@
+*, *:after, *:before  {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: -.01em;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    color: rgb(0 0 0 / 0.87)
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+img {
+    vertical-align: middle;
+    height: auto;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.text-center, .row-info {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    background: none;
+    border: 1px solid;
+    border-radius: 50px;
+    padding: 7px 16px;
+    font-weight: 600;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    transition: all .2s ease;
+}
+
+/*Navbar*/
+
+.main_header {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 60px 1fr ;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo {
+    width: 50px;
+    display: block;
+}
+
+.menu-options, .header-menu{
+    display: flex;
+}
+
+.header-menu {
+    justify-content: space-between;
+}
+
+.header-menu a {
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.right-options {
+    margin-left: 40px;
+}
+
+.left-options li {
+    display: inline-block;
+    margin-right: 40px;
+    padding-inline-start: 0px;
+    text-transform: uppercase;
+}
+
+.left-options a {
+    position: relative;
+}
+.left-options a:hover {
+    color: #00754a;
+}
+
+.left-options a:hover:before {
+    bottom: -37px;
+    background: #00754a;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+}
+
+.right-options li {
+    margin-right: 20px;
+}
+
+.menu-options li:last-child {
+    margin-right: 0;
+}
+
+.right-options .locator {
+    position: relative;
+    border: 0;
+    padding-left: 20px;
+}
+
+.right-options .locator:before {
+    background-image: url(https://www.starbucks.com.mx/static/images/stores.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-indent: -9999em;
+    background-size: 15px;
+    bottom: 0;
+    content: "";
+    height: 22px;
+    left: 0;
+    position: absolute;
+    top: 5px;
+    width: 15px;
+}
+
+.right-options a.menu-register {
+    background-color: #000;
+    color: #fff;
+}
+
+.right-options a:hover {
+    opacity: .8;
+}
+
+/* -- MAIN -- */
+
+.row-info, .block-info {
+    padding: 32px 16px;
+}
+
+.intern-box {
+    max-width: 83%;
+    margin: 0 auto;
+}
+
+.row-text, .block-text {
+    font-size: 1.188rem;
+    line-height: 1.75;
+    margin-bottom: 30px;
+    margin-top: 24px;
+}
+
+/* Rows */
+
+.rows {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
+}
+
+.row-title {
+    font-size: 1.875rem;
+    line-height: 1.385;
+    font-weight: 600;
+}
+
+.row1 {
+    background-color: #f7f0e4;
+    color: #00754a;
+}
+
+.row2 {
+    background-color: #d1d1aa;
+    color: #32462f;
+}
+
+.row3, .row5, .block1 {
+    background-color: #00754a;
+    color: #d1d1aa;
+}
+.row4 {
+    background-color: #32462f;
+    color: #d1d1aa;
+}
+
+.row2 .row_block--img, .row4 .row_block--img {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/*Blocks*/
+.main-content--blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.blocks {
+    margin-bottom: 0;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr;
+}
+
+.block-info {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.block2 {
+    background-color: #f7f0e4;
+    color: #32462f;
+}
+
+/*Prefooter*/
+.prefooter {    
+    display: flex;
+}
+
+/*Footer*/
+.footer {
+    text-align: center;
+}
+
+.footer_social--icons li {
+    display: inline-block;
+}
+
+.footer_menu--options li {
+    display: inline-block;
+}
