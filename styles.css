@@ -30,9 +30,13 @@ ul {
     margin: 0;
 }
 
-h2 {
+h2, h3 {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+h3 {
+    line-height: 1.5;
 }
 
 p {
@@ -57,31 +61,40 @@ p {
     transition: all .2s ease;
 }
 
+.region {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.container {
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 1240px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /*Navbar*/
 
 .main_header {
-    padding-bottom: 20px;
-    padding-top: 20px;
     width: 100%;
     position: relative;
     top: 0;
     left: 0;
     background-color: #fff;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
+    overflow: hidden;
 }
 
-.container {
+.main_header .container {
     display: grid;
     grid-template-columns: 60px 1fr ;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    width: 100%;
-    max-width: 1240px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: 0;
 }
 
 .logo {
@@ -171,6 +184,10 @@ p {
 
 /* -- MAIN -- */
 
+.main-content {
+    margin-bottom: 30px;
+}
+
 .row-info, .block-info {
     padding: 32px 16px;
 }
@@ -252,12 +269,60 @@ p {
 
 /*Prefooter*/
 .prefooter {    
+    display: block;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 -3px 3px rgba(0 0 0 / .1);
+}
+
+.prefooter .container {
     display: flex;
+    justify-content: space-between;
+}
+
+.prefooter-lists {
+    display: flex;
+    position: relative;
+}
+
+.prefooter-lists .lists {
+    margin-bottom: 0;
+    margin-right: 40px;
+    max-width: 190px;
+}
+
+.prefooter-lists .lists:last-child {
+    margin-right: 0;
+}
+
+.prefooter h3 {
+    font-size: 1.118rem;
+    margin-bottom: 24px;
+    position: relative;
+    font-weight: 400;
+}
+
+.prefooter .lists ul {
+    font-size: 1rem;
+}
+
+.prefooter .lists ul li {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+}
+
+.prefooter .lists ul li:first-child {
+    padding-top: 0;
+}
+
+.prefooter .lists ul a {
+    color: #777;
 }
 
 /*Footer*/
 .footer {
-    text-align: center;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .footer_social--icons li {
