@@ -44,7 +44,7 @@ p {
     margin-bottom: 1rem;
 }
 
-.text-center, .row-info {
+.text-center{
     text-align: center;
 }
 
@@ -182,11 +182,11 @@ p {
     opacity: .8;
 }
 
-/* -- MAIN -- */
-
 .main-content {
     margin-bottom: 30px;
 }
+
+/* -- MAIN -- */
 
 .row-info, .block-info {
     padding: 32px 16px;
@@ -307,6 +307,7 @@ p {
 }
 
 .prefooter .lists ul li {
+    padding-top: 8px;
     margin-bottom: 8px;
     padding-bottom: 8px;
 }
@@ -317,6 +318,10 @@ p {
 
 .prefooter .lists ul a {
     color: #777;
+}
+
+.prefooter .lists ul a:hover {
+    color: #000;
 }
 
 /*FOOTER*/
@@ -374,6 +379,11 @@ p {
     margin-right: 0;
 }
 
+.footer-social li a:hover {
+    opacity: .8;
+    transform: translateY(-2px);
+}
+
 /* Options*/
 
 .footer-menu {
@@ -399,6 +409,10 @@ p {
 
 .footer-menu li:last-child a::after {
     display: none;
+}
+
+.footer-menu li a:hover {
+    color: #777;
 }
 
 /* Copyright Message */
