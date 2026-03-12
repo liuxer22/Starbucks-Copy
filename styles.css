@@ -319,16 +319,92 @@ p {
     color: #777;
 }
 
-/*Footer*/
+/*FOOTER*/
 .footer {
     padding-bottom: 0;
     padding-top: 0;
+    color: #999;
 }
 
-.footer_social--icons li {
+.footer-content {
+    border-top: 1px solid #eee;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+
+/* Social Media */
+.footer-social {
+    margin-bottom: 30px ;
+}
+
+.footer-social li {
     display: inline-block;
 }
 
-.footer_menu--options li {
+.footer-social li a {
+    background-image: url(https://www.starbucks.com.mx/static/images/social_networks_v2.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    text-indent: -9999em;
+    background-size: 34px;
     display: inline-block;
+    height: 34px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    width: 34px;
+}
+
+.footer-social li a.facebook-icon {
+    background-position-y: 0;
+}
+
+.footer-social li a.instagram-icon {
+    background-position-y: -74px;
+}
+
+.footer-social li a.x-icon {
+    background-position-y: -148px;
+}
+
+.footer-social li a.youtube-icon {
+    background-position-y: -423px;
+}
+
+.footer-social li:last-child a {
+    margin-right: 0;
+}
+
+/* Options*/
+
+.footer-menu {
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+.footer-menu li {
+    display: inline-block;
+    margin: 0 15px 10px 15px
+}
+
+.footer-menu li a {
+    position: relative;
+}
+
+.footer-menu li a::after {
+    content: "|";
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: -2px;
+}
+
+.footer-menu li:last-child a::after {
+    display: none;
+}
+
+/* Copyright Message */
+
+.copyright {
+    display: block;
+    font-size: .875rem;
+    font-weight: 300;
 }
