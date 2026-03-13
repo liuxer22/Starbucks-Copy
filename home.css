@@ -1,5 +1,9 @@
 /* -- MAIN -- */
 
+.main-content {
+    margin-bottom: 30px;
+}
+
 .row-info, .block-info {
     padding: 32px 16px;
 }

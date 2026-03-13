@@ -30,7 +30,7 @@ ul {
     margin: 0;
 }
 
-h2, h3 {
+h2, h3, h4 {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -86,6 +86,7 @@ p {
     background-color: #fff;
     box-shadow: 0 3px 3px rgba(0, 0, 0, .1);
     overflow: hidden;
+    z-index: 2;
 }
 
 .main_header .container {
@@ -180,10 +181,6 @@ p {
 
 .right-options a:hover {
     opacity: .8;
-}
-
-.main-content {
-    margin-bottom: 30px;
 }
 
 /*Prefooter*/
