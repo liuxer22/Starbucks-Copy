@@ -1,0 +1,103 @@
+* {
+    outline: none;
+}
+
+body {
+    padding-top: 90px;
+}
+.main_header {
+    position: fixed;
+    box-shadow: 0 4px 4px -4px #ccc;
+}
+.content {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.left-content {
+    position: fixed;
+    color: white;
+    background: linear-gradient(0deg, rgb(29, 57,  50) 0%, rgb(10, 105, 75) 100%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 0 0 41.666667%;
+    height: calc(100vh - 90px);
+    min-height: 92vh;
+    max-width: 41.666667%;
+    width: 100%;
+    box-shadow: rgb(204, 204, 204) 7px 0px 4px -4px;
+    overflow-y: auto;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.left-content::before {
+    background-image: url(https://rewards.starbucks.mx/_next/static/media/bg-section-left-hand.0d6943f4dd00e30428d035564a73c510.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: contain;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 43%;
+    height: 45%;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.left-content_box {
+    z-index: 1;
+    padding-bottom: 50px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.left-content_img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.left-content_title {
+    font-size: 26pt;
+    color: rgb(255, 255, 255);
+    letter-spacing: normal;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    font-weight: 400
+}
+
+.left-content_buttons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+.left-content_buttons a {
+    font-weight: 700;
+}
+
+.left-button2 {
+    color: rgb(51, 51, 51);
+    background-color: #fff;
+}
+
+.right-content {
+    z-index: 0;
+    min-height: 100vh;
+    margin-left: 41.666667%;
+    max-width: 58.333333%;
+    flex: 0 0 58.333333%;
+}
