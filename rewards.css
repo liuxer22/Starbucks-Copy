@@ -1,64 +1,4 @@
-* {
-    outline: none;
-}
-
-body {
-    padding-top: 90px;
-    letter-spacing: initial;
-}
-
-h2, h3, h4 {
-    font-weight: 400;
-    line-height: 1.2;
-    color: inherit;
-}
-
-h2 {
-    font-size: 1.4em;
-}
-
-h3 {
-    font-size: 1.3rem;
-}
-
-h4 {
-    font-size: 1.1rem;
-}
-/* Navbar */
-.main_header {
-    position: fixed;
-    box-shadow: 0 4px 4px -4px #ccc;
-}
-
-/* CONTENT */
-.content {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-}
-
 /* Left content */
-.left-content {
-    position: fixed;
-    color: white;
-    background: linear-gradient(0deg, rgb(29, 57,  50) 0%, rgb(10, 105, 75) 100%);
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex: 0 0 41.666667%;
-    height: calc(100vh - 90px);
-    min-height: 92vh;
-    max-width: 41.666667%;
-    width: 100%;
-    box-shadow: rgb(204, 204, 204) 7px 0px 4px -4px;
-    overflow-y: auto;
-    padding-right: 0;
-    padding-left: 0;
-}
-
 .left-content::before {
     background-image: url(https://rewards.starbucks.mx/_next/static/media/bg-section-left-hand.0d6943f4dd00e30428d035564a73c510.png);
     background-repeat: no-repeat;
@@ -117,19 +57,12 @@ h4 {
     background-color: #fff;
 }
 
-/* Right Cotent */
-.right-content {
-    z-index: 0;
-    min-height: 100vh;
-    margin-left: 41.666667%;
-    max-width: 58.333333%;
-    flex: 0 0 58.333333%;
-}
-
+/* Right Content */
 .section-box {
     padding: 40px;
 }
 
+/* Sección Beneficios */
 .section-box_container {
     width: 80%;
     margin: 0 auto 0 auto;
@@ -143,8 +76,17 @@ h2.section-title {
     display: inline-block;
 }
 
-.section-title span {
+.section-title .boldSpan {
     font-weight: 600;
+}
+
+.starSpan {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.gold_star {
+    width: 30px;
 }
 
 .section-benefits {
@@ -503,17 +445,4 @@ h2.section-title {
 
 .rewardsLogo-img {
     max-width: 50%;
-}
-
-/* Prefooter */
-
-.prefooter {
-    box-shadow: initial;
-}
-
-/*Footer*/
-
-/* Social Media */
-.footer-social {
-    margin-bottom: 0;
 }
