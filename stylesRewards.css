@@ -7,7 +7,7 @@ body {
     letter-spacing: initial;
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
     font-weight: 400;
     line-height: 1.2;
     color: inherit;
@@ -51,7 +51,7 @@ h4 {
     flex-direction: column;
     flex: 0 0 41.666667%;
     height: calc(100vh - 90px);
-    min-height: 92vh;
+    min-height: calc(100vh - 90px);
     max-width: 41.666667%;
     width: 100%;
     box-shadow: rgb(204, 204, 204) 7px 0px 4px -4px;
