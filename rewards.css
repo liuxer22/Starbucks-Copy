@@ -413,7 +413,7 @@ h2.section-title {
 }
 
 .conoceMas-content_img {
-    margin: 1rem 1rem 0 0;
+    margin: 0 1rem 1rem 0;
     width: 350px;
     align-self: center;
 }

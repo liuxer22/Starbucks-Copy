@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="stylesRewards.css">
+    <link rel="stylesheet" href="stylesForms.css">
     <link rel="stylesheet" href="login.css">
     <link rel="icon" type="image/svg" href="https://www.starbucks.com.mx/static/images/logo.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,7 +35,7 @@
                     <li><a href="#" class="locator button">Localizar tienda</a></li>
                     
                     <!-- Login Button -->
-                    <li><a href="login.html" class="button">Ingresar</a></li>
+                    <li><a href="login.html" class="menu-login button">Ingresar</a></li>
 
                     <!-- Register Button -->
                     <li><a href="register.html" class="menu-register button">Únete</a></li>
@@ -66,20 +67,20 @@
                     <div class="form-box">
 
                         <!-- Formulario -->
-                        <form id="normal_login">
+                        <form id="normal_login" class="formulario">
                             
                             <!-- Email -->
-                            <div class="login-form_item email-field">
+                            <div class="form_item email-field">
 
-                                <div class="login-form_label">
+                                <div class="form_label">
                                     <label 
                                     for="normal_login-email">Ingresa tu email</label>
                                 </div>
 
-                                <div class="login-form_input">
-                                    <input 
-                                    type="text"
-                                    id="normal_login-email" 
+                                <div class="form_input">
+                                    <input
+                                    type="email"
+                                    id="normal_login-email"
                                     placeholder="Ingresa tu email"
                                     >
                                 </div>
@@ -87,14 +88,14 @@
                             </div>
 
                             <!-- Contraseña -->
-                            <div class="login-form_item password-field">
+                            <div class="form_item password-field">
 
-                                <div class="login-form_label">
+                                <div class="form_label">
                                     <label 
                                     for="normal_login-password">Ingresa tu contraseña</label>
                                 </div>
                                 
-                                <div class="login-form_input">
+                                <div class="form_input">
                                     <input
                                     type="password"
                                     id="normal_login-password"
@@ -105,13 +106,14 @@
 
                             </div>
 
-                            <div class="login-form_item">
+                            <div class="form_item">
                                 <span class="forgot-button button">Olvidé mi contraseña</span>
                             </div>
                              
-                            <div class="login-form_button">
-                                <button class="login-button button">Iniciar sesión</button>
+                            <div class="form_button-box">
+                                <button class="form-button button">Iniciar sesión</button>
                             </div>
+
                         </form>
                     </div>
                 </section>
@@ -194,16 +196,16 @@
                         <ul class="social-icons">
 
                             <li>
-                                <a class="facebook-icon" href="https://www.facebook.com/StarbucksMexico">Facebook</a>
+                                <a class="facebook-icon" href="https://www.facebook.com/StarbucksMexico" target="_blank">Facebook</a>
                             </li>
                             <li>
-                                <a class="instagram-icon" href="https://www.instagram.com/starbucksMex/">Instagram</a>
+                                <a class="instagram-icon" href="https://www.instagram.com/starbucksMex/" target="_blank">Instagram</a>
                             </li>
                             <li>
-                                <a class="x-icon" href="https://x.com/StarbucksMex">Twitter/X</a>
+                                <a class="x-icon" href="https://x.com/StarbucksMex" target="_blank">Twitter/X</a>
                             </li>
                             <li>
-                                <a class="youtube-icon" href="https://www.youtube.com/user/StarbucksMexico">Youtube</a>
+                                <a class="youtube-icon" href="https://www.youtube.com/user/StarbucksMexico" target="_blank">Youtube</a>
                             </li>
                         </ul>
 

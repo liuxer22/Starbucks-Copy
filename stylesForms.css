@@ -1,0 +1,145 @@
+/* Left Content */
+.left-content {
+    padding: 75px;
+}
+
+.left-content_title {
+    font-weight: 800;
+    font-size: 23pt;
+    margin: 1em;
+}
+
+/* Formulario */
+.formulario {
+    font-size: 14px;
+    color: rgb(0 0 0 / .85);
+    line-height: 1.5715;
+    list-style: none;
+}
+
+.form_item {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.form_label {
+    display: inline-block;
+    max-width: 100%;
+    flex-grow: 0;
+}
+
+.form_label label {
+    opacity: 1;
+    transition: all .25s ease-in-out;
+    height: auto;
+    font-size: 0.9rem;
+    color: rgb(0 0 0 / .56);
+    display: inline-flex;
+    align-items: center;
+}
+
+.form_label label::before {
+    content: "*";
+    display: inline-block;
+    margin-right: 4px;
+    color: #ff4d4f;
+    line-height: 1;
+}
+
+.form_input {
+    position: relative;
+}
+
+.form_input input {
+    text-overflow: ellipsis;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    font-size: 1rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}   
+
+.form_input input[type="text"]:focus, .form_input input[type="email"]:focus {
+    border-bottom: 2px solid #00a862;
+}
+
+.form_input input[type="password"]:hover {
+    border-color: #40a9ff;
+}
+
+.form_input input:focus::placeholder{
+    color: transparent;
+}
+
+/* Password eye */
+.password-eye {
+    display: flex;
+    align-items: center;
+    width: 15px;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    cursor: pointer;
+    opacity: .5;
+    transition: all .3s;
+}
+
+.password-eye:hover {
+    opacity: 1;
+}
+
+
+/* Send Button */
+.form_button-box {
+    text-align: right;
+}
+
+.form-button {
+    font-size: 1.2em;
+    padding: 28px 2.4rem;
+    margin-bottom: 10px;
+    border-radius: 500px;
+    border: 0;
+    line-height: 0;
+    color: #fff;
+    background-color: #00a862;
+    border-color: #00a862;
+    box-shadow: 0 0 6px rgb(0 0 0 / .24), 0 8px 12px rgb(0 0 0 / .14);
+    text-shadow: 0 -1px 0 rgb(0 0 0 / .12);
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.form-button:focus {
+    box-shadow: 0 0 6px rgb(0 0 0 / .24), 0 8px 12px transparent;
+    transform: translateY(4px);
+}
+
+.form-button:active {
+    box-shadow: 0 0 6px rgb(0 0 0 / .24), 0 8px 12px transparent;
+    transform: translateY(4px);
+}
+
+/* Unete */
+
+.unete-header {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2d2926;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}

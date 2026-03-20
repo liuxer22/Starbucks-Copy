@@ -31,6 +31,17 @@ h4 {
     box-shadow: 0 4px 4px -4px #ccc;
 }
 
+.right-options .menu-login:hover {
+    opacity: initial;
+    border: 1px solid #000;
+    background: rgb(0 0 0 / 0.06);
+
+}
+
+.right-options .menu-register:hover {
+    background: rgb(0 0 0 / .8);
+}
+
 /* CONTENT */
 .content {
     position: relative;

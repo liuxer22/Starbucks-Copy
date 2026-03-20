@@ -1,0 +1,215 @@
+
+/* Main */
+/* Right Content */
+
+.right-content {
+    background: #edebe9;
+}
+
+.register {
+    width: 400px;
+    margin: 2em auto;
+    max-width: 100%;
+}
+
+/* Register Header */
+
+.register-header {
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    display: block;
+    line-height: initial;
+    font-size: 1.05rem;
+}
+
+.register-header span {
+    font-size: 80%;
+    font-weight: 400;
+}
+
+/* Register <p> */
+
+.register-p {
+    color: rgb(0 0 0 / 0.56);
+    font-size: 0.9rem;
+}
+
+/* Fecha de nacimiento */
+
+.birthdate-title {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.birthdate-title small {
+    color: rgb(0 0 0 / .85);
+}
+
+.birthdate-text {
+    margin-bottom: 0;
+    line-height: 1.05rem;
+}
+
+.birthdate-menu_box {
+    margin: 2em 0px 1em 5px;
+    display: flex;
+    gap: 30px;
+}
+
+.birthdate-menu {
+    position: relative;
+    width: 100px;
+}
+
+.birthdate-menu select {
+    width: 100%;
+    padding: 10px 25px 10px 10px;
+    color: rgb(0 0 0 / .65);
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #c2c8d1;
+    cursor: pointer;
+    font-size: 1rem;
+
+    appearance: none;
+    
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23999%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpolyline%20points%3D%226%209%2012%2015%2018%209%22%3E%3C%2Fpolyline%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 16px;
+}
+
+/*Unirse Starbucks Rewards */
+
+.unirseRewards-title {
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.unirseRewards-text, .birthdate-text {
+    color: #6c757d;
+    margin-top: .25rem;
+}
+
+.unirseRewards-option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1.1rem;
+    font-size: 10pt;
+    color: rgb(0 0 0 / .56);
+    font-weight: 500;
+}
+
+.unirseRewards-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.unirseRewards-option_circle {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-right: 5px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.1s ease;
+}
+
+.unirseRewards-option_circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: green;
+    transition: all 0.4s ease;
+}
+
+.unirseRewards-option input[type="radio"]:checked + .unirseRewards-option_circle{
+    border-color: green;
+}
+
+.unirseRewards-option input[type="radio"]:checked + .unirseRewards-option_circle::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+/* Términos y Condiciones */
+
+.terms-conditons {
+    margin-bottom: 2rem;
+}
+
+.terms-conditions_title {
+    font-size: 1.1rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    line-height: inherit;
+}
+
+.terms-conditions_box {
+    margin-bottom: 1rem;
+}
+
+.terms-conditions_option {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    color: rgb(0 0 0 / 0.56);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.terms-conditions_option input {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.option-box {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-right: 3px;
+    position: relative;
+    background-color: white;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+}
+
+.option-box::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    left: 6px;
+    top: 2px;
+    display: none;
+    transition: all 0.4s ease;
+}
+
+.terms-conditions_option input:checked + .option-box {
+    background-color: green;
+    border-color: green;
+}
+
+.terms-conditions_option input:checked + .option-box::after {
+    display: block;
+}
+
+.option-text a{
+    text-decoration: underline;
+    color: #006341;
+}

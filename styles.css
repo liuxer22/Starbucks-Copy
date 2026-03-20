@@ -44,6 +44,11 @@ p {
     margin-bottom: 1rem;
 }
 
+small {
+    font-size: 80%;
+    font-weight: 400;
+}
+
 .text-center{
     text-align: center;
 }
@@ -131,6 +136,7 @@ p {
 .left-options a {
     position: relative;
 }
+
 .left-options a:hover {
     color: #00754a;
 }
@@ -271,7 +277,7 @@ p {
     display: inline-block;
     height: 34px;
     margin-bottom: 20px;
-    margin-right: 30px;
+    margin-right: 26px;
     width: 34px;
 }
 

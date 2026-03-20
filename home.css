@@ -45,7 +45,12 @@
     color: #32462f;
 }
 
-.row3, .row5, .block1 {
+.row3 {
+    background-color: #00754a;
+    color: #fff;
+}
+
+.row5, .block1 {
     background-color: #00754a;
     color: #d1d1aa;
 }
