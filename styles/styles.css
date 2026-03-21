@@ -183,10 +183,39 @@ small {
 .right-options a.menu-register {
     background-color: #000;
     color: #fff;
+    border: 1px solid #000;
 }
 
-.right-options a:hover {
-    opacity: .8;
+.right-options a {
+    transition: all .3s;
+    touch-action: manipulation;
+    user-select: none;
+}
+
+.right-options a.menu-login:active, .right-options a.menu-register:active {
+    transform: scale(.95);
+}
+
+/* Login Button */
+.right-options a.menu-login:focus {
+    border: 1px solid #008248;
+    background: rgb(0 130 72 / .08);
+    color: #008248;
+}
+
+.right-options a.menu-login:hover,
+.right-options a.menu-login:active {
+    border: 1px solid #000;
+    background: rgb(0 0 0 / 0.06);
+    color: #000;
+}
+
+/* Register Button */
+.right-options a.menu-register:focus,
+.right-options a.menu-register:hover,
+.right-options a.menu-register:active {
+    border: 1px solid rgb(0 0 0 / .7);
+    background: rgb(0 0 0 / .7);
 }
 
 /*Prefooter*/
